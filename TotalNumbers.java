@@ -20,14 +20,9 @@ public class TotalNumbers{
         while (!input.equals("q")) {
             
             // make your code impervious to clumsy or careless user input.
-            try{
                 n = Integer.parseInt(input) ;
                 total += n;
-            }// end try
-            catch(NumberFormatException e){
-                System.out.println("sorry invalid input, please enter an int.");
-            }// end catch
-            
+                       
             // update the control variable, you know what happens if we don't do this!
             System.out.println("Enter a number (q to quit):") ;
             input = kb.next();
@@ -35,6 +30,8 @@ public class TotalNumbers{
         
         // bye bye
         System.out.println("The total of numbers is "+ total) ;
+        
+        System.out.println("Done") ;
     }
 }
 
